@@ -10,6 +10,7 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+
 ActiveRecord::Schema.define(version: 20151205164301) do
 
   create_table "users", force: :cascade do |t|
@@ -18,7 +19,6 @@ ActiveRecord::Schema.define(version: 20151205164301) do
     t.string   "email"
     t.string   "username"
     t.string   "password"
-    t.boolean  "is_admin"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20151205164301) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.boolean  "is_admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
