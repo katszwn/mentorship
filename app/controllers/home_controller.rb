@@ -1,5 +1,7 @@
-class HomeController <ActionController::Base
+class HomeController < ActionController::Base
   before_action :authenticate_user!
+
+  layout 'application'
 
   def index
     @users = User.all
