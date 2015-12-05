@@ -1,7 +1,6 @@
-class HomeController <ActionController::Base
-  before_action :authenticate_user!
+class HomeController < ActionController::Base
 
-  def index
-    @users = User.all
+  def personal
+    @user = current_user
   end
 end

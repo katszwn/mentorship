@@ -1,0 +1,11 @@
+<h1>Our Mentors:</h1>
+
+<% @users.each do |u| =%>
+  <p>
+    <%= u.first_name + " " + u.last_name %>
+    <br>
+    Expertise area:
+    <%= u.area_of_expertise %>
+  </p>
+
+<% end %>
