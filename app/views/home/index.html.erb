@@ -20,10 +20,13 @@
     <h1 class="mentor">Our Mentors</h1>
 </div>
 </div>
+
 <div class="row small-up-2 medium-up-3 large-up-4">
 <div class="column">
-<img class="thumbnail" src="http://placehold.it/550x550">
 <% @users.each do |u| =%>
+
+<img class="thumbnail" src="http://placehold.it/550x550">
+
   <p>
     <%= u.first_name + " " + u.last_name %>
     <br>
