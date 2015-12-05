@@ -10,6 +10,7 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+
 ActiveRecord::Schema.define(version: 20151205164301) do
 
   create_table "users", force: :cascade do |t|
@@ -18,9 +19,9 @@ ActiveRecord::Schema.define(version: 20151205164301) do
     t.string   "email"
     t.string   "username"
     t.string   "password"
-    t.boolean  "is_admin"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.boolean  "is_admin"
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
