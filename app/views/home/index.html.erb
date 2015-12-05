@@ -1,5 +1,29 @@
-<h1>Our Mentors:</h1>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>I-Mentorship</title>
+<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="app/asset/stylesheets/mentorship.css">
 
+</head>
+<body>
+<div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+<div class="callout primary">
+<div class="row column">
+<p class="lead">Got a passion but don't know where to start? Got a skill or intrest you'd love to share?
+    Looking to connect with awesome people, learn new things, discover new passions, or browse topics? Then you're in the right place! Mentorship is the video sharing site that allows you to do all of the above from the comfort of any location. Just add you and wifi, browse our mentors and get started today!</p>
+    <h1>Our Mentors</h1>
+</div>
+</div>
+<div class="row small-up-2 medium-up-3 large-up-4">
+<div class="column">
+<img class="thumbnail" src="http://placehold.it/550x550">
 <% @users.each do |u| =%>
   <p>
     <%= u.first_name + " " + u.last_name %>
@@ -9,3 +33,43 @@
   </p>
 
 <% end %>
+</div>
+
+<hr>
+<div class="row">
+<div class="medium-6 columns">
+<h3>Contact Me</h3>
+<p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+<ul class="menu">
+<li><a href="#">Dribbble</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Yo</a></li>
+</ul>
+</div>
+<div class="medium-6 columns">
+<label>Name
+<input type="text" placeholder="Name">
+</label>
+<label>Email
+<input type="text" placeholder="Email">
+</label>
+<label>
+Message
+<textarea placeholder="holla at a designerd"></textarea>
+</label>
+<button class="button expanded">Submit</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
+
+<!-- from this page an anonymous user should be able to choose from the full list of available
+mentors to talk w/ in their area of expertise. -->
