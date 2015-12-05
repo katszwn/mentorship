@@ -1,1 +1,10 @@
-<h1>Oh Hai</h1>
+<h1>Our Mentors:</h1>
+
+<% @users.each do |u| =%>
+  <p>
+    <%= u.first_name + " " + u.last_name %>
+    <br>
+    Expertise area
+  </p>
+
+<% end %>
