@@ -1,8 +1,7 @@
 class HomeController < ActionController::Base
-
   layout 'application'
 
-  def index
-    @users = User.all
+  def personal
+    @user = current_user
   end
 end
